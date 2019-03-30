@@ -10,3 +10,13 @@
 	return NULL;
 }
 %end
+
+// Hide Camera and Flashlight Button on Coversheet
+%hook SBDashBoardQuickActionsViewController	
+	-(BOOL)hasFlashlight{
+		return NO;
+		}
+	-(BOOL)hasCamera{
+		return NO;
+}
+%end
